@@ -13,7 +13,10 @@ public interface CarService {
 	List<String> BRANDS = Arrays.asList("Toyota", "Honda", "Ford");
 	List<String> COLORS = Arrays.asList("red", "black", "white");
 	List<String> TYPES = Arrays.asList("Sedan", "SUV", "MPV");
+	List<String> ADDITIONAL_FEATURES = Arrays.asList("GPS", "AC", "Leather Seats", "Auto Gear", "Auto drive", "power boost", "Auto recharge");
 	
 	Car generateCar() throws ParseException;
+	
+	List<Car> generateRandomCars() throws ParseException;
 
 }

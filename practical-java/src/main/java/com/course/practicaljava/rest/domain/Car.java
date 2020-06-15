@@ -1,9 +1,8 @@
 package com.course.practicaljava.rest.domain;
 
 import java.util.Date;
+import java.util.List;
 
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 public class Car {
 	private String brand;
@@ -12,6 +11,7 @@ public class Car {
 	private int price;
 	private boolean available;
 	private Date firstReleaseDate;
+	private List<String> additionalFeatures;
 	
 	public Car() {}
 	public Car(String brand, String color, String type) {
@@ -56,9 +56,18 @@ public class Car {
 	public void setFirstReleaseDate(Date firstReleaseDate) {
 		this.firstReleaseDate = firstReleaseDate;
 	}
+	public List<String> getAdditionalFeatures() {
+		return additionalFeatures;
+	}
+	public void setAdditionalFeatures(List<String> additionalFeatures) {
+		this.additionalFeatures = additionalFeatures;
+	}
 	
 	@Override
 	public String toString() {
-		return "Car [brand=" + brand + ", color=" + color + ", type=" + type + ", price=" + price + ", available=" + available + ", first release date=" + firstReleaseDate + "]";
+		return "Car [brand=" + brand + ", color=" + color + 
+			   ", type=" + type + ", price=" + price + ", available=" + available + 
+			   ", first release date=" + firstReleaseDate + 
+			   ", additional features "+ additionalFeatures + "]";
 	}
 }

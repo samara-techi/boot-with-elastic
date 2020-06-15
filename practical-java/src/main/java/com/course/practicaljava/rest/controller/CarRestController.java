@@ -1,6 +1,7 @@
 package com.course.practicaljava.rest.controller;
 
 import java.text.ParseException;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -30,5 +31,12 @@ public class CarRestController {
 	public String echo(@RequestBody Car car) {
 		return car.toString();
 	}
+	
+	@GetMapping(path = "/random-cars", 
+			    produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Car> getRandomCars() throws ParseException {
+		return carService.generateRandomCars();
+	}	
+	
 
 }
