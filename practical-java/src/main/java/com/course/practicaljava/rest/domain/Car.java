@@ -10,8 +10,12 @@ public class Car {
 	private String type;
 	private int price;
 	private boolean available;
+	
 	private Date firstReleaseDate;
+	private Engine engine;
+	
 	private List<String> additionalFeatures;
+	private List<Tire> tires;
 	
 	public Car() {}
 	public Car(String brand, String color, String type) {
@@ -62,7 +66,18 @@ public class Car {
 	public void setAdditionalFeatures(List<String> additionalFeatures) {
 		this.additionalFeatures = additionalFeatures;
 	}
-	
+	public Engine getEngine() {
+		return engine;
+	}
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+	public List<Tire> getTires() {
+		return tires;
+	}
+	public void setTires(List<Tire> tires) {
+		this.tires = tires;
+	}
 	@Override
 	public String toString() {
 		return "Car [brand=" + brand + ", color=" + color + 

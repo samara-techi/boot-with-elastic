@@ -15,6 +15,9 @@ public interface CarService {
 	List<String> TYPES = Arrays.asList("Sedan", "SUV", "MPV");
 	List<String> ADDITIONAL_FEATURES = Arrays.asList("GPS", "AC", "Leather Seats", "Auto Gear", "Auto drive", "power boost", "Auto recharge");
 	
+	List<String> FUEL_TYPE = Arrays.asList("Petrol", "Electric", "Hybrid");
+	List<String> TIRE_MANUFACTURERS = Arrays.asList("Goodyear", "Bridgestone", "Dunlop");
+	
 	Car generateCar() throws ParseException;
 	
 	List<Car> generateRandomCars() throws ParseException;
