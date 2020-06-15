@@ -2,6 +2,9 @@ package com.course.practicaljava.rest.domain;
 
 import java.util.Date;
 
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
 public class Car {
 	private String brand;
 	private String color;
