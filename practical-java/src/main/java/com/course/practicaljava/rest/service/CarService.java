@@ -10,9 +10,9 @@ import com.course.practicaljava.rest.domain.Car;
 
 public interface CarService {
 	
-	List<String> BRANDS = Arrays.asList("Toyota", "Honda", "Ford");
-	List<String> COLORS = Arrays.asList("red", "black", "white");
-	List<String> TYPES = Arrays.asList("Sedan", "SUV", "MPV");
+	List<String> BRANDS = Arrays.asList("Toyota", "Honda", "Ford", "Mitsubishi", "Chevrolet");
+	List<String> COLORS = Arrays.asList("red", "black", "white", "blue", "silver");
+	List<String> TYPES = Arrays.asList("Sedan", "SUV", "MPV", "Truck", "Coupe");
 	List<String> ADDITIONAL_FEATURES = Arrays.asList("GPS", "AC", "Leather Seats", "Auto Gear", "Auto drive", "power boost", "Auto recharge");
 	
 	List<String> FUEL_TYPE = Arrays.asList("Petrol", "Electric", "Hybrid");
